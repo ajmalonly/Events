@@ -1,3 +1,38 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://scontent.fqlf1-2.fna.fbcdn.net/v/t1.6435-9/182029555_3987199168014754_2463518891318501511_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=EKxFrsc-nbEAX_fZEoz&_nc_ht=scontent.fqlf1-2.fna&oh=00_AfA4wwXKoG3klk5V-EBMAw8iJaZiTmm18oF5Dt62JfATWA&oe=63987897" />
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+            <%= link_to "Home", root_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "New Trends", new_trends_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item active">
+            <%= link_to "Rental", rental_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item active">
+            <%= link_to "Contact Us", contact_path, class: "nav-link" %>
+          </li>
+          <div class="nav-links">
+          <a href="https://www.instagram.com/f.rambocusevents/?hl=en"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/frambocuseventsltd/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/@weddingmauritius?lang=en"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+          <!--li class="nav-item"-->
+          <!--/li-->
+      </ul>
+    </div>
+  </div>
+</div>
+
 <div class="container">
 
   <div class="card-trip">
@@ -5,8 +40,14 @@
     <div class="card-trip-infos">
       <div>
         <h4>Contact Us</h4>
-        <h6><i class="fa-solid fa-square-phone"></i> 52563105 - 5902762</h6>
+        <h6><i class="fa-solid fa-square-phone"></i> 52563105 - 59027262</h6>
+        <h6><i class="fa-solid fa-envelope"></i> f.rambocusevents@gmail.com</h6>
         <h6><i class="fa-solid fa-location-dot"></i> La Caverne No.2, Vacoas, Mauritius</h6>
+        <div>
+        <a class="btn btn-success" href="https://www.google.com/maps/dir/65.0305156,25.489746/frambocusevents/@17.8699912,3.0797109,3z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x217c5de9664b0dc1:0x981d6c704dd6a119!2m2!1d57.4792978!2d-20.3031229" role="button">Google Map Direction</a>
+        </div>
+        <br>
+
         <p>Follow us</p>
         <a href="https://www.instagram.com/f.rambocusevents/?hl=en"><i class="fab fa-instagram"></i></a>
         <a href="https://www.facebook.com/frambocuseventsltd/"><i class="fab fa-facebook"></i></a>
