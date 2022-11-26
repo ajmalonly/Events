@@ -1,8 +1,8 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: transparent;
-  // box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-  z-index:9;
+  background: rgb(247, 227, 230);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  // z-index:9;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -10,16 +10,29 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 150px;
-  height: 50px;
+  width: 200px;
+  height: 60px;
 }
 
-.nav-links {
+.nav-item active {
+  font-family: 'Euphoria Script', cursive;
+  color: rgb(140, 124, 124);
+  font-weight: 400;
+  font-size: 200px;
+}
+
+.collapse navbar-collapse {
+  font-family: 'Euphoria Script', cursive;
+  color: black;
+}
+
+.navbar-lewagon .nav-links {
+  color: black;
   display: flex;
   align-items: center;
 }
-.nav-links a {
-  color: rgb(237, 212, 212);
+.navbar-lewagon .nav-links a {
+  // color: rgb(34, 31, 31);
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;

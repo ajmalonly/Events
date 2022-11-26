@@ -3,9 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 200px;
   padding: 0px 50px;
-  color: rgba(255, 255, 255, 0.3);
+  color: (230,199,194);
 }
 .footer-links {
   display: flex;
@@ -19,7 +19,7 @@
   padding: 0px 10px;
 }
 .footer-links a:hover {
-  color: pink;
+  color: rgb(185, 13, 42);
   opacity: 1;
 }
 .footer-texts {
