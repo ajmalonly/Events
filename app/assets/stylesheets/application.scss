@@ -7,10 +7,12 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
 
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
 @import "pages/contact";
-@import "pages/new_trends";
+@import "pages/gallery";
+@import "pages/rental";

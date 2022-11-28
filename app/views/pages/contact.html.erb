@@ -1,8 +1,8 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="https://scontent.fqlf1-2.fna.fbcdn.net/v/t1.6435-9/182029555_3987199168014754_2463518891318501511_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=EKxFrsc-nbEAX_fZEoz&_nc_ht=scontent.fqlf1-2.fna&oh=00_AfA4wwXKoG3klk5V-EBMAw8iJaZiTmm18oF5Dt62JfATWA&oe=63987897" />
-</a>
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag asset_path('logo.png')%>
+    <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,11 +36,12 @@
 <div class="container">
 
   <div class="card-trip">
-    <img src="https://scontent.fqlf1-2.fna.fbcdn.net/v/t39.30808-6/303515578_5454992604568729_3930154492577528822_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a26aad&_nc_ohc=LzQXFQr8_YQAX8OY7fQ&_nc_ht=scontent.fqlf1-2.fna&oh=00_AfDfCgwIv5jVEJZjEKDvl4yWbsX0dTjJdot0DByndGt6Ug&oe=637680ED" />
+    <img src="https://scontent.fqlf1-2.fna.fbcdn.net/v/t39.30808-6/302237557_5454992614568728_7605952292890544879_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a26aad&_nc_ohc=U1L0V6EezycAX8_0MiU&_nc_ht=scontent.fqlf1-2.fna&oh=00_AfBwMhPAo4sYAvuUXEU5gb8P34EvUOdzxICuHtShU7YG2g&oe=638A266E" />
     <div class="card-trip-infos">
       <div>
         <h4>Contact Us</h4>
-        <h6><i class="fa-solid fa-square-phone"></i> 52563105 - 59027262</h6>
+        <h6><i class="fa-solid fa-square-phone"></i> 5256 3105 - 5902 7262</h6>
+        <h6><i class="fa-solid fa-envelope"></i> info@frambocusevents.me</h6>
         <h6><i class="fa-solid fa-envelope"></i> f.rambocusevents@gmail.com</h6>
         <h6><i class="fa-solid fa-location-dot"></i> La Caverne No.2, Vacoas, Mauritius</h6>
         <div>

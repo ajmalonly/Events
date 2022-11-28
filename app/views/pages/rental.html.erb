@@ -1,8 +1,8 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="https://scontent.fqlf1-2.fna.fbcdn.net/v/t1.6435-9/182029555_3987199168014754_2463518891318501511_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=EKxFrsc-nbEAX_fZEoz&_nc_ht=scontent.fqlf1-2.fna&oh=00_AfA4wwXKoG3klk5V-EBMAw8iJaZiTmm18oF5Dt62JfATWA&oe=63987897" />
-</a>
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag asset_path('logo.png')%>
+    <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,30 +32,4 @@
     </div>
   </div>
 </div>
-
-<div class="container">
-  <div class="card-product">
-        <iframe width="500" height="300" src="https://www.shutterstock.com/shutterstock/videos/1087581521/preview/stock-footage-wedding-beach-set-up-arch-pink-concept-for-seaside-and-daytime-wedding-woods-chair-s-gold-concept.webm" frameborder="0" allowfullscreen></iframe>
-        </iframe>
-    <div class="card-product-infos">
-      <h2>Beach Wedding</h2>
-      <p> Plan your Unfogettable <strong>Beach Wedding</strong> with us.</p>
-    </div>
-  </div>
-  <div class="card-product">
-      <iframe width="500" height="300" src="https://www.shutterstock.com/shutterstock/videos/1087581521/preview/stock-footage-wedding-beach-set-up-arch-pink-concept-for-seaside-and-daytime-wedding-woods-chair-s-gold-concept.webm" frameborder="0" allowfullscreen></iframe>
-      </iframe>
-  <div class="card-product-infos">
-    <h2>Beach Wedding</h2>
-    <p> Plan your Unfogettable <strong>Beach Wedding</strong> with us.</p>
-  </div>
-  </div>
-  <div class="card-product">
-      <iframe width="500" height="300" src="https://www.shutterstock.com/shutterstock/videos/1087581521/preview/stock-footage-wedding-beach-set-up-arch-pink-concept-for-seaside-and-daytime-wedding-woods-chair-s-gold-concept.webm" frameborder="0" allowfullscreen></iframe>
-      </iframe>
-  <div class="card-product-infos">
-    <h2>Beach Wedding</h2>
-    <p> Plan your Unfogettable <strong>Beach Wedding</strong> with us.</p>
-  </div>
-  </div>
-</div>
+<br>
