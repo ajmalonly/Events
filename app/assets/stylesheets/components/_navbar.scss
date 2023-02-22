@@ -1,8 +1,10 @@
 .navbar-lewagon {
+  height: 50px;
   justify-content: space-between;
-  background: rgb(247, 227, 230);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  // background: rgb(232, 108, 127);
+  // box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   // z-index:9;
+  position: sticky;
 }
 
 .navbar-lewagon .navbar-collapse {

@@ -6,16 +6,29 @@
   height: 700px;
 }
 
+.container-fluid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.flexii{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 .intro{
   font-family: 'Euphoria Script', cursive;
-  font-weight: 500;
-  font-size: 25px;
-  color: rgb(188, 101, 101);
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(69, 22, 28);
 }
 .card-product {
   overflow: hidden;
   height: 250px;
-  background: white;
+  background: rgb(241, 225, 225);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
@@ -87,8 +100,8 @@ body { font-family: sans-serif; }
 
 
 body {
-  background: #DFC2F2;
-    background-image: linear-gradient( to left, #f7d9ec,#ffe6e6);
+  background: #d1cbd4;
+    background-image: linear-gradient( to left, #ffe5ef,#c07e7e);
     background-attachment: fixed;
     background-size: cover;
 
@@ -236,7 +249,7 @@ body {
     position: relative;
     overflow: hidden;
     height: 100%;
-    float: right;
+    // float: right;
     width: 45%;
     display: inline-block;
   }

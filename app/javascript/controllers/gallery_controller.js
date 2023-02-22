@@ -95,16 +95,24 @@ rightBtn.addEventListener('mouseleave', stopMovement);
 //Start this baby up
 (function init() {
 	var images = [
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/car.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/city.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/deer.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/flowers.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg'
+		'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/violet_up1bxu.jpg',
+		'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/municipality_mchfcv.jpg',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/vampire_ulpgak',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/garden_advamb',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/rajput_jkqs9i',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/sofa_g5qyip',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
+    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht'
 	];
 
 	//Set Initial Featured Image
