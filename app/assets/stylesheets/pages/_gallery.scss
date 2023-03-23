@@ -1,85 +1,43 @@
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	outline: none;
-	box-sizing: border-box;
-}
-
-body {
-	margin: 0;
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	color: #707070;
-	background-color: #333;
-}
-
-.container {
-	margin: 0 auto;
-	max-width: 700px;
-	max-height: 100vh;
-	background-color: white;
-}
-
-
-/* Useful Classes */
-.xy-center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.transition {
-	transition: all 350ms ease-in-out;
-}
-
-.r-3-2 {
-	width: 100%;
-	padding-bottom: 66.667%;
-	background-color: #ddd;
-}
-
-.image-holder {
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-/* Main Styles */
-.gallery-wrapper {
-	position: relative;
-	overflow: hidden;
-}
-
 .gallery {
-	position: relative;
-	white-space: nowrap;
-	font-size: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
 }
 
-.item-wrapper {
-	cursor: pointer;
-	width: 23%; /* arbitrary value */
-	display: inline-block;
-	background-color: white;
+.gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
 }
 
-.gallery-item { opacity: 0.5; }
-.gallery-item.active { opacity: 1; }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+}
 
-.controls {
-	font-size: 0;
-	border-top: none;
+.modal img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
 }
-.move-btn {
-	display: inline-block;
-	width: 50%;
-	border: none;
-  color: #ccc;
-	background-color: transparent;
-	padding: 0.2em 1.5em;
+
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-.move-btn:first-child {border-right: none;}
-.move-btn.left  { cursor: w-resize; }
-.move-btn.right { cursor: e-resize; }

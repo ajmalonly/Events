@@ -1,35 +1,47 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag asset_path('logo.png')%>
-    <% end %>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-          <li class="nav-item active">
-            <%= link_to "Home", root_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Gallery", gallery_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Rental", rental_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Contact Us", contact_path, class: "nav-link" %>
-          </li>
-          <div class="nav-links">
-          <a href="https://www.instagram.com/f.rambocusevents/?hl=en"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/frambocuseventsltd/"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.tiktok.com/@weddingmauritius?lang=en"><i class="fa-brands fa-tiktok"></i></a>
-          </div>
-          <!--li class="nav-item"-->
-          <!--/li-->
-      </ul>
+<%= render 'shared/navbar' %>
+<div class="container-fluid">
+  <div class="card d-flex py-2 my-3">
+    <div class="card-image">
+      <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/sous_plat_rvhdfw.jpg" alt="Card Image">
+    </div>
+    <div class="card-text">
+      <h2>Gold plateholder</h2>
+    </div>
+  </div>
+  <div class="card d-flex py-2 my-3">
+    <div class="card-image">
+      <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/table_iqmm9x.jpg" alt="Card Image">
+    </div>
+    <div class="card-text">
+      <h2>Table</h2>
+    </div>
+  </div>
+  <div class="card d-flex py-2 my-3">
+    <div class="card-image">
+      <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/glass_dvjkft.jpg" alt="Card Image">
+    </div>
+    <div class="card-text">
+      <h2>Cocktail Glass</h2>
+    </div>
+  </div>
+  <div class="card d-flex py-2 my-3">
+    <div class="card-image">
+      <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/cutelry_cvgf67.jpg" alt="Card Image">
+    </div>
+    <div class="card-text">
+      <h2>Golden Cutlery</h2>
+    </div>
+  </div>
+  <div class="card d-flex py-2 my-3">
+    <div class="card-image">
+      <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/municipality_mchfcv.jpg" alt="Card Image">
+    </div>
+    <div class="card-text">
+      <h2>Chapiteau transparent</h2>
     </div>
   </div>
 </div>
+
+
 <br>
+<%= render 'shared/footer' %>

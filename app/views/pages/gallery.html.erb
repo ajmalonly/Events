@@ -1,88 +1,37 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-      <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag asset_path('logo.png')%>
-      <% end %>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<%= render 'shared/navbar' %>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-          <li class="nav-item active">
-            <%= link_to "Home", root_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Gallery", gallery_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Rental", rental_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Contact Us", contact_path, class: "nav-link" %>
-          </li>
-          <div class="nav-links">
-          <a href="https://www.instagram.com/f.rambocusevents/?hl=en"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/frambocuseventsltd/"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.tiktok.com/@weddingmauritius?lang=en"><i class="fa-brands fa-tiktok"></i></a>
-          </div>
-          <!--li class="nav-item"-->
-          <!--/li-->
-      </ul>
-    </div>
+<div class="container">
+  <div class="text d-flex border-bottom py-1 my-3">
+    <h3>View Our Offers</h3>
+  </div>
+  <div class="gallery">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/garden_advamb.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/vampire_ulpgak.jpg" alt="Image 2">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090674/events/sofa_g5qyip.jpg" alt="Image 3">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090669/events/bedi_gqvtxb.jpg" alt="Image 4">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090669/events/beach1_essnxd.jpg" alt="Image 5">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/simple_wgrpz7.jpg" alt="Image 6">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/green_uquoyd.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/violet_up1bxu.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/lascar_zkgmt5.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/arab_mkwyht.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/flamingo_mx3h2g.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/razak_drhqlx.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/sofa_g5qyip.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/fix_foe8oq.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/pool_i8neqx.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/nikah_nfhgcn.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/bedi_gqvtxb.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/ganesh_m0dnhy.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/valley_sx6fmv.jpg" alt="Image 1">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090675/events/beach_phe0us.jpg" alt="Image 1">
+
+  </div>
+
+  <div class="modal">
+    <img src="https://res.cloudinary.com/dshqvee0g/image/upload/v1677090669/events/bedi1_cf5da6.jpg" alt="" id="modal-image">
+    <button id="close-btn">&times;</button>
   </div>
 </div>
-
-
-
-	<div class="feature">
-		<figure class="featured-item image-holder r-3-2 transition"></figure>
-	</div>
-
-	<div class="gallery-wrapper">
-		<div class="gallery">
-				<div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 active transition"></figure>
-				</div>
-				<div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 transition"></figure>
-				</div>
-				<div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 transition"></figure>
-				</div>
-				<div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 transition"></figure>
-				</div>
-				<div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2"></figure>
-				</div>
-				<div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 transition"></figure>
-				</div>
-				<div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 transition"></figure>
-				</div>
-				<div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 transition"></figure>
-				</div>
-				<div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 transition"></figure>
-				</div>
-				<div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 transition"></figure>
-				</div>
-        <div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 transition"></figure>
-				</div>
-        <div class="item-wrapper">
-					<figure class="gallery-item image-holder r-3-2 transition"></figure>
-				</div>
-        <div class="item-wrapper">
-          <figure class="gallery-item image-holder r-3-2 transition"></figure>
-		</div>
-	</div>
-
-	<div class="controls">
-		<button class="move-btn left">&larr;</button>
-		<button class="move-btn right">&rarr;</button>
-	</div>
+<br>
+<%= render 'shared/footer' %>

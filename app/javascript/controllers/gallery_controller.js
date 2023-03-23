@@ -1,126 +1,24 @@
-var gallery = document.querySelector('.gallery');
-var galleryItems = document.querySelectorAll('.gallery-item');
-var numOfItems = gallery.children.length;
-var itemWidth = 23; // percent: as set in css
+import { Controller } from "@hotwired/stimulus"
 
-var featured = document.querySelector('.featured-item');
-
-var leftBtn = document.querySelector('.move-btn.left');
-var rightBtn = document.querySelector('.move-btn.right');
-var leftInterval;
-var rightInterval;
-
-var scrollRate = 0.2;
-var left;
-
-function selectItem(e) {
-	if (e.target.classList.contains('active')) return;
-
-	featured.style.backgroundImage = e.target.style.backgroundImage;
-
-	for (var i = 0; i < galleryItems.length; i++) {
-		if (galleryItems[i].classList.contains('active'))
-			galleryItems[i].classList.remove('active');
-	}
-
-	e.target.classList.add('active');
+export default class extends Controller {
+  connect() {
+    this.element.textContent = "Gallery Controller"
+  }
 }
 
-function galleryWrapLeft() {
-	var first = gallery.children[0];
-	gallery.removeChild(first);
-	gallery.style.left = -itemWidth + '%';
-	gallery.appendChild(first);
-	gallery.style.left = '0%';
-}
 
-function galleryWrapRight() {
-	var last = gallery.children[gallery.children.length - 1];
-	gallery.removeChild(last);
-	gallery.insertBefore(last, gallery.children[0]);
-	gallery.style.left = '-23%';
-}
+const gallery = document.querySelector('.gallery');
+const modal = document.querySelector('.modal');
+const modalImg = document.querySelector('#modal-image');
+const closeBtn = document.querySelector('#close-btn');
 
-function moveLeft() {
-	left = left || 0;
+gallery.addEventListener('click', function(e) {
+  if (e.target.tagName === 'IMG') {
+    modal.style.display = 'block';
+    modalImg.src = e.target.src;
+  }
+});
 
-	leftInterval = setInterval(function() {
-		gallery.style.left = left + '%';
-
-		if (left > -itemWidth) {
-			left -= scrollRate;
-		} else {
-			left = 0;
-			galleryWrapLeft();
-		}
-	}, 1);
-}
-
-function moveRight() {
-	//Make sure there is element to the leftd
-	if (left > -itemWidth && left < 0) {
-		left = left  - itemWidth;
-
-		var last = gallery.children[gallery.children.length - 1];
-		gallery.removeChild(last);
-		gallery.style.left = left + '%';
-		gallery.insertBefore(last, gallery.children[0]);
-	}
-
-	left = left || 0;
-
-	leftInterval = setInterval(function() {
-		gallery.style.left = left + '%';
-
-		if (left < 0) {
-			left += scrollRate;
-		} else {
-			left = -itemWidth;
-			galleryWrapRight();
-		}
-	}, 1);
-}
-
-function stopMovement() {
-	clearInterval(leftInterval);
-	clearInterval(rightInterval);
-}
-
-leftBtn.addEventListener('mouseenter', moveLeft);
-leftBtn.addEventListener('mouseleave', stopMovement);
-rightBtn.addEventListener('mouseenter', moveRight);
-rightBtn.addEventListener('mouseleave', stopMovement);
-
-
-//Start this baby up
-(function init() {
-	var images = [
-		'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/violet_up1bxu.jpg',
-		'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/municipality_mchfcv.jpg',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/vampire_ulpgak',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/garden_advamb',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/rajput_jkqs9i',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/sofa_g5qyip',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht',
-    'https://res.cloudinary.com/dshqvee0g/image/upload/v1677092920/events/arab_mkwyht'
-	];
-
-	//Set Initial Featured Image
-	featured.style.backgroundImage = 'url(' + images[0] + ')';
-
-	//Set Images for Gallery and Add Event Listeners
-	for (var i = 0; i < galleryItems.length; i++) {
-		galleryItems[i].style.backgroundImage = 'url(' + images[i] + ')';
-		galleryItems[i].addEventListener('click', selectItem);
-	}
-})();
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
