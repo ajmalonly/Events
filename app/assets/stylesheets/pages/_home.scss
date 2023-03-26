@@ -1,10 +1,13 @@
 // Specific CSS for your home-page
+// #carouselExampleIndicators .carousel-inner {
+//   height: 700px /* Set the height of the carousel inner element */
+// }
 
-.carousel-inner{
-  display: flex;
-  justify-content: flex-start;
-  height: 700px;
-}
+// #carouselExampleIndicators .carousel-item img {
+//   height: 800px; /* Set the height of the carousel images */
+//   object-fit: cover; /* This will make the images fill the carousel */
+// }
+
 
 .card {
   max-width: 600px;
@@ -133,6 +136,18 @@
   padding: 16px;
 }
 
+.card .btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: rgba(232, 105, 105, 0.8);
+  transition: background 0.3s ease;
+}
+
+.card .btn-flat:hover {
+  background: #f9b8de;
+  color: white;
+}
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
@@ -176,7 +191,11 @@ body { font-family: sans-serif; }
 
 body {
   background: #d1cbd4;
-    background-image: linear-gradient( to left, #ffe5ef,#c07e7e);
+    background-image: linear-gradient( to left, #f7eeee,#F0DBDB);
     background-attachment: fixed;
     background-size: cover;
+}
+
+.text.d-flex.border-bottom {
+  border-bottom: 2px solid red;
 }
